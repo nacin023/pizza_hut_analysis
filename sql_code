@@ -1,0 +1,35 @@
+-- count the number of Pizza Hut locations by state
+SELECT state, COUNT(*) AS location_count
+FROM pizza_hut_locations
+GROUP BY state
+ORDER BY location_count DESC;
+
+
+-- rank cities by the number of Pizza Hut locations they host
+SELECT city, state, COUNT(*) AS location_count
+FROM pizza_hut_locations
+GROUP BY city, state
+ORDER BY location_count DESC
+LIMIT 30;
+
+
+-- distribution of opening hours across different locations
+SELECT open_hours, COUNT(*) AS frequency
+FROM pizza_hut_locations
+GROUP BY open_hours
+ORDER BY frequency DESC;
+
+
+-- distribution of different types of Pizza Hut locations
+SELECT type, COUNT(*) AS count
+FROM pizza_hut_locations
+GROUP BY type
+ORDER BY count DESC;
+
+
+-- identify the top combinations of states and cities with the most Pizza Hut locations
+SELECT state, city, COUNT(*) AS location_count
+FROM pizza_hut_locations
+GROUP BY state, city
+ORDER BY location_count DESC
+LIMIT 20;
