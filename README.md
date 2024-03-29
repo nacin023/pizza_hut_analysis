@@ -5,6 +5,6 @@ This is a quick dive into where and how Pizza Hut sets up shop across the U.S. I
 Texas, California, and Florida value their Pizza Hut.
 Big cities, especially Houston and San Antonio, are where you'll find lots of them.
 
-Tools Used: SQL  & Python (for visualizations used in the report) 
+Tools Used: Postgres  & Python (for visualizations used in the report) 
 
 Dataset Note: https://www.kaggle.com/code/sadeghjalalian/pizza-hut-restaurants-analysis/input
